@@ -1,0 +1,85 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Warna latar belakang yang lembut */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Warna putih untuk navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.navbar-brand {
+    color: #ff4c00; /* Warna oranye untuk brand */
+    font-weight: bold;
+    font-size: 1.5rem; /* Ukuran font lebih besar */
+}
+
+.nav-link {
+    color: #000000; /* Warna teks hitam untuk link */
+    transition: color 0.3s; /* Transisi halus saat hover */
+}
+
+.nav-link:hover {
+    color: #ff4c00; /* Warna oranye saat hover */
+}
+
+/* Form Pencarian */
+.form-control {
+    border: 1px solid #ff4c00; /* Border oranye untuk input */
+    border-radius: 20px; /* Sudut melengkung */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(255, 76, 0, 0.5); /* Efek fokus */
+    border-color: #ff4c00; /* Border oranye saat fokus */
+}
+
+.btn-danger {
+    background-color: #ff4c00; /* Warna oranye untuk tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 20px; /* Sudut melengkung */
+    padding: 10px 20px; /* Jarak atas dan bawah */
+    font-size: 1.5rem; /* Ukuran font lebih besar */
+    cursor: pointer; /* Mengubah kursor menjadi pointer */
+}
+
+.btn-danger:hover {
+    background-color: #ffffff; /* Warna putih saat hover */
+    color: #ff4c00; /* Warna oranye saat hover */
+}
+
+/* Gaya untuk kotak produk */
+.product-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi halus untuk transformasi dan bayangan */
+    border: 1px solid #ddd; /* Border untuk kotak */
+    border-radius: 8px; /* Sudut melengkung */
+    overflow: hidden; /* Menghindari gambar keluar dari kotak */
+}
+
+/* Efek hover pada kotak produk */
+.product-box:hover {
+    transform: translateY(-5px); /* Mengangkat kotak sedikit ke atas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih gelap saat hover */
+}
+
+/* Gaya untuk gambar produk */
+.product-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s ease; /* Transisi halus untuk gambar */
+}
+
+/* Efek hover pada gambar produk */
+.product-box:hover .product-image {
+    transform: scale(1.05); /* Zoom in gambar saat hover */
+}
